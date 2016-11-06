@@ -1,0 +1,6 @@
+<h3>{{party.name}}</h3>
+<p>{{party.date}}</p>
+
+{{#each party.lists as |list|}}
+  {{party-view/party-list list=list}}
+{{/each}}

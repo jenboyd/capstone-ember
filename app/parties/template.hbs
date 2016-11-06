@@ -1,0 +1,5 @@
+{{#each model as |party|}}
+  {{#link-to 'party' party}}
+    {{party-view/party-name name=party.name}}
+  {{/link-to}}
+{{/each}}
