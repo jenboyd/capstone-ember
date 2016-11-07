@@ -1,0 +1,14 @@
+<h3 class="party-name">
+  <form {{action 'save' model on='submit'}}>
+    {{input value=model.name
+            class='input-group form-control'}}
+
+    <button type="submit" class="btn btn-xs btn-primary">
+      Save
+    </button>
+
+    <button class="btn btn-xs btn-default" {{action 'cancel' model}}>
+      Cancel
+    </button>
+  </form>
+</h3>

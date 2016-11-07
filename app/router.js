@@ -10,9 +10,12 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('parties');
-  this.route('party', { path: '/parties/:party_id' });
+  this.route('parties', function() {});
+  this.route('party', { path: 'parties/:party_id' }, function () {
+    this.route('edit');
+  });
 
+  this.route('create-party');
 });
 
 export default Router;

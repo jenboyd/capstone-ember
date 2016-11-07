@@ -1,11 +1,10 @@
-import ENV from 'capstone-ember/config/environment';
-import ActiveModelAdapter from 'active-model-adapter';
-
 import Ember from 'ember';
+import ActiveModelAdapter from 'active-model-adapter';
+import ENV from 'capstone-ember/config/environment';
+
 
 export default ActiveModelAdapter.extend({
   host: ENV.apiHost,
-
   auth: Ember.inject.service(),
 
   headers: Ember.computed('auth.credentials.token', {
