@@ -9,7 +9,6 @@ export default Ember.Route.extend({
     createList (newList) {
       let list = this.get('store').createRecord('list', newList);
       list.save();
-  
     },
 
     deleteParty (party) {

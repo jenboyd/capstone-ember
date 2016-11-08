@@ -7,7 +7,6 @@ export default Ember.Route.extend({
 
   actions: {
     createParty(data) {
-      console.log(data);
       let party = this.get('store').createRecord('party', data);
       party.save()
       .then(()=>this.transitionTo('parties'));
