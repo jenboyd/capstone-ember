@@ -11,7 +11,6 @@ export default Ember.Component.extend({
 
    delete() {
      return this.sendAction('deleteParty', this.get('party'));
-
    },
 
    deleteList (list) {
@@ -25,11 +24,7 @@ export default Ember.Component.extend({
    createList () {
      let newList = this.get('form');
      newList.party = this.get('party');
-     console.log("inside party-view component list is:", this.get('list'));
-     console.log("inside party-view component party is:", this.get('party'));
-
      this.sendAction('createList', newList);
-
      this.set('form.name', null);
 
    },

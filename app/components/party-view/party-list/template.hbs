@@ -7,11 +7,8 @@
     Edit
   </button>
 
-  {{#each list.item_instance as |instance|}}
-     {{instance.id}}
-     {{#each instance.item as |item|}}
-          {{item.name}}
-     {{/each}}
+  {{#each list.item as |item|}}
+    <li>{{item.content}}</li>
   {{/each}}
 
 </div>
