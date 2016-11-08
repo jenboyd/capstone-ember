@@ -3,16 +3,16 @@
   <form>
     {{input placeholder='Party Name?'
             class='input-group form-control'
-            value=party.name}}
+            value=newParty.name}}
 
     {{input placeholder='When is it?'
             class='input-group form-control'
-            value=party.date
+            value=newParty.date
             type='date'}}
 
     {{input placeholder='Where will it be?'
             class='input-group form-control'
-            value=party.location}}
+            value=newParty.location}}
 
     <button type="submit" class="btn btn-primary" {{action 'save'}}>Get Started</button>
     <button {{action 'cancel'}} class="btn btn-default">Cancel</button>

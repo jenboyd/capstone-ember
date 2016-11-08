@@ -7,6 +7,9 @@
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
           <li>{{#link-to "parties"}}Parties{{/link-to}}</li>
+          {{#link-to "create-party"}}
+            <button class="btn btn-primary">Create a Party</button>
+          {{/link-to}}
         {{/if}}
       </ul>
 

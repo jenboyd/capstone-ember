@@ -15,9 +15,10 @@
     {{party-view/party-list list=list
                             deleteList='deleteList'
                             editList='editList'}}
+                            
   {{/each}}
 
-  
+
   <form {{action 'createList' on='submit'}}>
     {{input placeholder='Add list'
             class='input-group form-control'
