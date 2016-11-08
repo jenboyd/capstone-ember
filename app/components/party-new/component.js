@@ -6,9 +6,7 @@ export default Ember.Component.extend({
   actions: {
     save () {
       let data = this.get('newParty');
-      data.party = this.get('party');
       this.sendAction('save', data);
-      //reset form
       this.set('newParty.name', null);
       this.set('newParty.date', null);
       this.set('newParty.location', null);
@@ -16,7 +14,7 @@ export default Ember.Component.extend({
     },
 
     cancel () {
-      this.sendAction('cancel', this.get('party'));
+      this.sendAction('cancel', this.get('newParty'));
     },
   },
 });

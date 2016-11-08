@@ -11,9 +11,16 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('parties', function() {});
-  this.route('party', { path: 'parties/:party_id' }, function () {
-    this.route('edit');
-  });
+  // this.route('party', { path: 'parties/:party_id' }, function () {
+  //   // this.route('edit');
+  // });
+
+  this.route('party', { path: 'parties/:party_id' });
+
+
+
+  this.route('party.edit', { path: '/parties/:party_id/edit' });
+
 
   this.route('create-party');
 });

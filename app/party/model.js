@@ -5,6 +5,6 @@ export default DS.Model.extend({
   date: DS.attr('date'),
   location: DS.attr('string'),
   lists: DS.hasMany('list'),
-  item: DS.hasMany('item', {async: true})
+  items: DS.hasMany('item')
 
 });
