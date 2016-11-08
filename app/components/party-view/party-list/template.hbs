@@ -1,12 +1,17 @@
 <div class="list">
   {{list.name}}
-  {{#each list.item as |item|}}
-    {{party-view/party-list/list-items item=item}}
-  {{/each}}
   <button class="btn btn-xs btn-danger" {{action 'delete'}}>
     X
   </button>
   <button class="btn btn-xs" {{action 'edit'}}>
     Edit
   </button>
+
+  {{#each list.item_instance as |instance|}}
+     {{instance.id}}
+     {{#each instance.item as |item|}}
+          {{item.name}}
+     {{/each}}
+  {{/each}}
+
 </div>

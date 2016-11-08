@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  item: DS.hasMany('item'),
-  party: DS.belongsTo('party'),
+  item_instance: DS.hasMany('item_instance', {async: true}),
+  item: DS.hasMany('item', {async: true}),
+  party: DS.belongsTo('party')
 });
