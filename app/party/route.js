@@ -11,22 +11,22 @@ export default Ember.Route.extend({
       list.save();
     },
 
-    deleteParty (party) {
-      party.destroyRecord();
-      this.transitionTo('parties');
-
+    editList (list) {
+      this.transitionTo('edit-list', list);
     },
 
     deleteList (list) {
       list.destroyRecord();
     },
 
-    editParty (party) {
-      this.transitionTo('party.edit', party);
+    deleteParty (party) {
+      party.destroyRecord();
+      this.transitionTo('parties');
+
     },
 
-    editList (list) {
-      list.destroyRecord();
+    editParty (party) {
+      this.transitionTo('party.edit', party);
     },
   },
 });

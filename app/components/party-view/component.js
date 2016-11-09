@@ -21,6 +21,10 @@ export default Ember.Component.extend({
      this.sendAction('editParty', this.get('party'));
    },
 
+   editList (list) {
+     this.sendAction('editList', list);
+   },
+
    createList () {
      let newList = this.get('form');
      newList.party = this.get('party');
