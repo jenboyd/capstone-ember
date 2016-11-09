@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   actions: {
     save () {
       let data = this.get('newParty');
+
       this.sendAction('save', data);
       this.set('newParty.name', null);
       this.set('newParty.date', null);

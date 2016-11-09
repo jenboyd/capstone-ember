@@ -4,6 +4,10 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #46484A;
 
 }
 
@@ -14,25 +18,37 @@
   background-color: #FCF6F1;
 }
 
+.index-view {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
 .navbar-default {
   border: 0;
   width: 100%;
-  background: none;
   border-radius: 0;
   box-shadow: none;
 }
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
+
 }
 
 .container-fluid > .navbar-header {
     margin-right: 0;
     margin-left: 0;
+
 }
 
 h1 {
   text-align: center;
+  font-size: 4em;
+  font-family: 'Cedarville Cursive', cursive;
 }
 
 .view-wrapper {
@@ -40,23 +56,82 @@ h1 {
   position: relative;
   top: 20px;
   min-height: 600px;
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 
 }
 
-//List of Lists
+.submit {
+  background-color: #053B34;
+  color: #FFF;
+}
+
+.submit:hover {
+  background-color: #4E8485;
+  color: #FFF;
+}
+
+.edit-btn {
+  border: 0;
+  box-shadow: none;
+  font-style: italic;
+  background-color: transparent;
+  font-size: 1em;
+}
+
+.edit-btn:hover {
+  color: #AD6316;
+}
+
+.del-btn {
+  font-family: helvetica, sans-serif;
+  font-size: 2em;
+}
+//
+.del-btn:hover {
+  color: red;
+}
+
+.float-right {
+  float: right;
+}
 
 
+
+//Party
+.party-new-form {
+  width: 30%;
+  margin: 70px auto;
+
+}
+
+.party-name {
+  margin: 30px 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+.link:hover {
+    color: #4E8485;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.form-input {
+  margin: 10px auto;
+}
+
+//List
 .lists {
    width: 50%;
    margin: 20px auto;
 }
-
-
-//List
 
 .list {
   height: 100px;
