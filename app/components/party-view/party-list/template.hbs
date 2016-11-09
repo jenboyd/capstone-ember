@@ -1,0 +1,16 @@
+<div class="list">
+  {{list.name}}
+  <button class="btn btn-xs btn-danger" {{action 'delete'}}>
+    X
+  </button>
+  <button class="btn btn-xs" {{action 'edit'}}>
+    Edit
+  </button>
+  {{#each list.items as |item|}}
+    <li>{{item.id}}</li>
+    <li>{{item.text}}</li>
+  {{/each}}
+
+
+
+</div>

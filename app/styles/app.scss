@@ -1,2 +1,67 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #FCF6F1;
+}
+
+.navbar-default {
+  border: 0;
+  width: 100%;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+}
+
+.container-fluid > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.view-wrapper {
+  background-color: white;
+  position: relative;
+  top: 20px;
+  min-height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+//List of Lists
+
+
+.lists {
+   width: 50%;
+   margin: 20px auto;
+}
+
+
+//List
+
+.list {
+  height: 100px;
+  border: .5px grey solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+}

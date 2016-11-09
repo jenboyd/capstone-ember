@@ -1,0 +1,29 @@
+<div class="view-wrapper">
+  <h3 class="party-name">
+    {{party.name}}
+  </h3>
+
+  <button class="btn btn-xs btn-primary" {{action 'edit'}}>
+    Edit
+  </button>
+  <button class="btn btn-xs btn-danger" {{action 'delete'}}>
+    X
+  </button>
+
+  {{party.location}}
+
+  <div class="lists">
+    {{#each party.lists as |list|}}
+      {{party-view/party-list list=list
+                              deleteList='deleteList'
+                              editList='editList'}}
+    {{/each}}
+
+    <form {{action 'createList' on='submit'}}>
+      {{input placeholder='Add list'
+              class='input-group form-control'
+              value=form.name}}
+
+    </form>
+  </div>
+</div>

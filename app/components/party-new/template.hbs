@@ -1,0 +1,21 @@
+<div class="party-new-form col-md-6">
+
+  <form>
+    {{input placeholder='Party Name?'
+            class='input-group form-control'
+            value=newParty.name}}
+
+    {{input placeholder='When is it?'
+            class='input-group form-control'
+            value=newParty.date
+            type='date'}}
+
+    {{input placeholder='Where will it be?'
+            class='input-group form-control'
+            value=newParty.location}}
+
+    <button type="submit" class="btn btn-primary" {{action 'save'}}>Get Started</button>
+    <button {{action 'cancel'}} class="btn btn-default">Cancel</button>
+
+  </form>
+</div>
