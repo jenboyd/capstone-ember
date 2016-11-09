@@ -51,7 +51,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/capstone-ember';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://capstone-api.herokuapp.com/';
+    ENV.apiHost = 'https://capstone-api.herokuapp.com';
   }
 
 

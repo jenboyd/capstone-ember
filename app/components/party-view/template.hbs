@@ -1,16 +1,17 @@
 <div class="view-wrapper">
-  <h3 class="party-name">
-    {{party.name}}
-  </h3>
 
-  <button class="btn btn-xs btn-primary" {{action 'edit'}}>
-    Edit
-  </button>
-  <button class="btn btn-xs btn-danger" {{action 'delete'}}>
+  <div class="btn btn-xs del-btn float-right" {{action 'delete'}}>
     X
-  </button>
+  </div>
 
-  {{party.location}}
+  <span class="party-name">
+    {{party.name}}
+  </span>
+  <span class="edit-btn" {{action 'edit'}}>
+    edit
+  </span>
+
+  <div>{{party.location}}</div>
 
   <div class="lists">
     {{#each party.lists as |list|}}

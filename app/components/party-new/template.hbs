@@ -1,21 +1,24 @@
-<div class="party-new-form col-md-6">
+  <form class="party-new-form">
+    <div class="form-input">
+      {{input placeholder='Party Name?'
+              class='input-group form-control'
+              value=newParty.name}}
+    </div>
 
-  <form>
-    {{input placeholder='Party Name?'
-            class='input-group form-control'
-            value=newParty.name}}
+    <!-- <div class="form-input">
+      {{input placeholder='When is it?'
+              class='input-group form-control'
+              value=newParty.date}}
 
-    {{input placeholder='When is it?'
-            class='input-group form-control'
-            value=newParty.date
-            type='date'}}
+    </div> -->
 
-    {{input placeholder='Where will it be?'
+    <div class="form-input">
+    {{input placeholder='Any Notes...'
             class='input-group form-control'
             value=newParty.location}}
+    </div>
 
-    <button type="submit" class="btn btn-primary" {{action 'save'}}>Get Started</button>
+    <button type="submit" class="btn submit" {{action 'save'}}>Get Started</button>
     <button {{action 'cancel'}} class="btn btn-default">Cancel</button>
 
   </form>
-</div>

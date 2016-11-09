@@ -1,6 +1,6 @@
-import DS from 'ember-data';
+import ApplicationSerializer from 'capstone-ember/application/serializer';
 
-export default DS.JSONAPISerializer.extend({
+export default ApplicationSerializer.extend({
   normalize (model, response) {
     response.text = response.content;
     delete response.content;
