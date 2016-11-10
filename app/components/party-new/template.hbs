@@ -1,24 +1,20 @@
   <form class="party-new-form">
+    <h4 class="welcome">Let's get this party started!</h4>
     <div class="form-input">
       {{input placeholder='Party Name?'
               class='input-group form-control'
               value=newParty.name}}
     </div>
-
-    <!-- <div class="form-input">
-      {{input placeholder='When is it?'
-              class='input-group form-control'
-              value=newParty.date}}
-
-    </div> -->
-
+    <div class="grey-italic">
+      Your party must have a name
+    </div>
     <div class="form-input">
     {{input placeholder='Any Notes...'
             class='input-group form-control'
             value=newParty.location}}
     </div>
 
-    <button type="submit" class="btn submit" {{action 'save'}}>Get Started</button>
+    <button type="submit" class="btn submit" {{action 'save'}}>Save</button>
     <button {{action 'cancel'}} class="btn btn-default">Cancel</button>
 
   </form>

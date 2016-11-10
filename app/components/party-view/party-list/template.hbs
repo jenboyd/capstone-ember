@@ -1,15 +1,27 @@
-<div class="list">
-  {{list.name}}
-  <button class="btn btn-xs del-btn-sm" {{action 'delete'}}>
-    X
-  </button>
-  <button class="btn btn-xs edit-btn" {{action 'edit'}}>
-    edit
-  </button>
-  {{#each list.items as |item|}}
-    <li>{{item.text}}</li>
-  {{/each}}
+<div class="list panel panel-default">
+  <div class="panel-heading">
+    <span class="list-name">{{list.name}}</span>
+    <span class="edit-btn" {{action 'edit'}}>
+      edit
+    </span>
+
+    <span class="del-btn-sm float-right" {{action 'delete'}}>
+      X
+    </span>
+
+  </div>
+  <div class="panel-body">
+    {{#each list.items as |item|}}
+      {{party-view/party-list/item item=item
+                                   deleteItem='deleteItem'}}
+    {{/each}}
+
+  <form class="add-item-form" {{action 'createItem' on='submit'}}>
+    {{input placeholder='Add item'
+            class='input-group form-control'
+            value=form.text}}
+  </form>
 
 
-
+  </div>
 </div>

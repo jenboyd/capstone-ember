@@ -6,9 +6,19 @@ export default Ember.Route.extend({
   },
 
   actions: {
+
+    deleteItem (item) {
+      item.destroyRecord();
+    },
+
     createList (newList) {
       let list = this.get('store').createRecord('list', newList);
       list.save();
+    },
+
+    createItem (newItem) {
+      let item = this.get('store').createRecord('item', newItem);
+      item.save();
     },
 
     editList (list) {
@@ -22,7 +32,6 @@ export default Ember.Route.extend({
     deleteParty (party) {
       party.destroyRecord();
       this.transitionTo('parties');
-
     },
 
     editParty (party) {

@@ -3,21 +3,23 @@
   <div class="btn btn-xs del-btn float-right" {{action 'delete'}}>
     X
   </div>
-
-  <span class="party-name">
-    {{party.name}}
-  </span>
-  <span class="edit-btn" {{action 'edit'}}>
-    edit
-  </span>
-
-  <div>{{party.location}}</div>
+  <div class="party-header">
+    <span class="party-name">
+      {{party.name}}
+    </span>
+    <span class="edit-btn" {{action 'edit'}}>
+      edit
+    </span>
+    <div>{{party.location}}</div>
+  </div>
 
   <div class="lists">
     {{#each party.lists as |list|}}
       {{party-view/party-list list=list
                               deleteList='deleteList'
-                              editList='editList'}}
+                              editList='editList'
+                              deleteItem='deleteItem'
+                              createItem='createItem'}}
     {{/each}}
 
     <form {{action 'createList' on='submit'}}>

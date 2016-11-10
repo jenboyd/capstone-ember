@@ -1,13 +1,19 @@
-<h3 class="party-name">
+<h3 class="party-new-form">
   <form {{action 'save' model on='submit'}}>
-    {{input value=model.name
-            class='input-group form-control'}}
+    <div class="form-input">
+      {{input value=model.name
+              class='input-group form-control'}}
+    </div>
+    <div class="form-input">
+      {{input value=model.location
+              class='input-group form-control'}}
+    </div>
 
-    <button type="submit" class="btn btn-xs btn-primary">
-      Update
+    <button type="submit" class="btn submit">
+      Save
     </button>
 
-    <button class="btn btn-xs btn-default" {{action 'cancel' model}}>
+    <button class="btn btn-default" {{action 'cancel' model}}>
       Cancel
     </button>
   </form>

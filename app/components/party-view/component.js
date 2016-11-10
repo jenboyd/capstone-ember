@@ -17,6 +17,10 @@ export default Ember.Component.extend({
      this.sendAction('deleteList', list);
    },
 
+   deleteItem (item) {
+     this.sendAction('deleteItem', item);
+   },
+
    edit () {
      this.sendAction('editParty', this.get('party'));
    },
@@ -31,6 +35,10 @@ export default Ember.Component.extend({
      this.sendAction('createList', newList);
      this.set('form.name', null);
 
+   },
+
+   createItem (newItem) {
+     this.sendAction('createItem', newItem);
    },
  },
 });

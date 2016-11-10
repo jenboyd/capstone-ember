@@ -21,10 +21,20 @@
 .index-view {
   text-align: center;
   margin: 50px 0;
+  font-size: 1.2em;
+}
+
+.auth-form {
+  width: 40%;
+  margin: 50px auto;
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin: 50px auto;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #46484A;
 }
 
 .navbar-default {
@@ -51,6 +61,10 @@ h1 {
   font-family: 'Cedarville Cursive', cursive;
 }
 
+.welcome {
+    color: #AD6316;
+}
+
 .view-wrapper {
   background-color: white;
   position: relative;
@@ -58,9 +72,9 @@ h1 {
   min-height: 600px;
   width: 70%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5px 10px;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -80,19 +94,36 @@ h1 {
   font-style: italic;
   background-color: transparent;
   font-size: 1em;
+  color: #9C9C9C;
 }
 
 .edit-btn:hover {
   color: #AD6316;
+  cursor: pointer;
 }
 
 .del-btn {
   font-family: helvetica, sans-serif;
   font-size: 2em;
+  color: #C7C7C7;
+
+}
+
+.del-btn-sm {
+  font-family: helvetica, sans-serif;
+  font-size: 1em;
+  color: #C7C7C7;
+
 }
 //
 .del-btn:hover {
-  color: red;
+  color: #F0184A;
+  cursor: pointer;
+}
+
+.del-btn-sm:hover {
+  color: #F0184A;
+  cursor: pointer;
 }
 
 .float-right {
@@ -100,23 +131,37 @@ h1 {
 }
 
 
-
 //Party
 .party-new-form {
   width: 30%;
   margin: 70px auto;
+}
 
+.grey-italic {
+  font-style: italic;
+  font-size: 1em;
+  color: #9C9C9C;
 }
 
 .party-name {
-  margin: 30px 0;
-  text-align: center;
   font-weight: 300;
   font-size: 2.5em;
+  color: #438485;
+}
+
+.party-header {
+  margin: 45px 0 30px 20%;
 }
 
 .link:hover {
     color: #4E8485;
+}
+
+.party {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 30px;
 }
 
 a:hover {
@@ -129,14 +174,35 @@ a:hover {
 
 //List
 .lists {
-   width: 50%;
+   width: 60%;
    margin: 20px auto;
 }
 
 .list {
-  height: 100px;
-  border: .5px grey solid;
-  border-radius: 5px;
-  padding: 10px;
+  min-height: 100px;
   margin: 20px auto;
+  text-align: left;
+}
+
+.list-name {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+//item
+
+.item {
+  width: 80%;
+  font-size: 1.2em;
+  margin: 20px auto;
+  border-bottom: grey dotted .5px;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.add-item-form {
+  margin: 20px auto 0 auto;
+  width: 80%;
+
 }
