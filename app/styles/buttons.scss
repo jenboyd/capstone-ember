@@ -1,11 +1,11 @@
 .submit {
-  background-color: #053B34;
-  color: #FFF;
+  background-color: $darkgreen;
+  color: $white;
 }
 
 .submit:hover {
-  background-color: #4E8485;
-  color: #FFF;
+  background-color: $sage;
+  color: $white;
 }
 
 .edit-btn {
@@ -14,34 +14,33 @@
   font-style: italic;
   background-color: transparent;
   font-size: 1em;
-  color: #9C9C9C;
+  color: $lightgrey;
 }
 
 .edit-btn:hover {
-  color: #AD6316;
+  color: $gold;
   cursor: pointer;
 }
 
 .del-btn {
   font-family: helvetica, sans-serif;
   font-size: 2em;
-  color: #C7C7C7;
-
+  color: $lightergrey;
 }
 
 .del-btn:hover {
-  color: #F0184A;
+  color: $pink;
   cursor: pointer;
 }
 
 .del-btn-sm {
   font-family: helvetica, sans-serif;
   font-size: 1em;
-  color: #C7C7C7;
+  color: $lightergrey;
 
 }
 
 .del-btn-sm:hover {
-  color: #F0184A;
+  color: $pink;
   cursor: pointer;
 }

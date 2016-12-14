@@ -4,14 +4,14 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #46484A;
-
+  color: $mediumgrey;
 }
 
 .container-fluid {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  background: $background;
 }
 
 .index-view {
@@ -30,7 +30,6 @@
   width: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #46484A;
 }
 
 .navbar-default {
@@ -54,16 +53,12 @@ h1 {
   text-align: center;
   font-size: 8em;
   font-family: 'Rouge Script', cursive;
-  color: #053B34;
+  color: $darkgreen;
   margin-top: 50px;
 }
 
-.info {
-    color: #AD6316;
-}
-
 .view-wrapper {
-  background-color: white;
+  background-color: $white;
   position: relative;
   top: 20px;
   min-height: 600px;
@@ -83,5 +78,5 @@ h1 {
 .grey-italic {
   font-style: italic;
   font-size: 1em;
-  color: #9C9C9C;
+  color: $lightgrey;
 }

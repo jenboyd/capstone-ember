@@ -6252,7 +6252,7 @@ button.close {
 .party-name {
   font-weight: 300;
   font-size: 2.5em;
-  color: #438485; }
+  color: #4E8485; }
 
 .party-header {
   margin: 45px 0 30px 20%; }
@@ -6283,7 +6283,8 @@ a:hover {
 .container-fluid {
   width: 100%;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  background: #ebeff2; }
 
 .index-view {
   text-align: center;
@@ -6298,8 +6299,7 @@ a:hover {
   margin: 50px auto;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #46484A; }
+  font-weight: 300; }
 
 .navbar-default {
   border: 0;
@@ -6321,11 +6321,8 @@ h1 {
   color: #053B34;
   margin-top: 50px; }
 
-.info {
-  color: #AD6316; }
-
 .view-wrapper {
-  background-color: white;
+  background-color: #FFF;
   position: relative;
   top: 20px;
   min-height: 600px;
