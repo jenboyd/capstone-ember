@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://use.fontawesome.com/e2e98f39a3.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6180,6 +6181,97 @@ button.close {
   border-color: gainsboro;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
+.submit {
+  background-color: #053B34;
+  color: #FFF; }
+
+.submit:hover {
+  background-color: #4E8485;
+  color: #FFF; }
+
+.edit-btn {
+  border: 0;
+  box-shadow: none;
+  font-style: italic;
+  background-color: transparent;
+  font-size: 1em;
+  color: #9C9C9C; }
+
+.edit-btn:hover {
+  color: #AD6316;
+  cursor: pointer; }
+
+.del-btn {
+  font-family: helvetica, sans-serif;
+  font-size: 2em;
+  color: #C7C7C7; }
+
+.del-btn:hover {
+  color: #F0184A;
+  cursor: pointer; }
+
+.del-btn-sm {
+  font-family: helvetica, sans-serif;
+  font-size: 1em;
+  color: #C7C7C7; }
+
+.del-btn-sm:hover {
+  color: #F0184A;
+  cursor: pointer; }
+
+.item {
+  width: 80%;
+  font-size: 1.2em;
+  margin: 20px auto;
+  border-bottom: grey dotted .5px;
+  text-align: left;
+  padding: 0 15px; }
+
+.add-item-form {
+  margin: 20px auto 0 auto;
+  width: 80%; }
+
+.lists {
+  width: 60%;
+  margin: 20px auto; }
+
+.list {
+  min-height: 100px;
+  margin: 20px auto;
+  text-align: left; }
+
+.list-name {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-right: 5px; }
+
+.party-new-form {
+  width: 30%;
+  margin: 70px auto; }
+
+.party-name {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: #438485; }
+
+.party-header {
+  margin: 45px 0 30px 20%; }
+
+.link:hover {
+  color: #4E8485; }
+
+.party {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 30px; }
+
+a:hover {
+  text-decoration: none; }
+
+.form-input {
+  margin: 10px auto; }
+
 * {
   padding: 0;
   margin: 0;
@@ -6191,8 +6283,7 @@ button.close {
 .container-fluid {
   width: 100%;
   padding-left: 0;
-  padding-right: 0;
-  background-color: #FCF6F1; }
+  padding-right: 0; }
 
 .index-view {
   text-align: center;
@@ -6225,10 +6316,12 @@ button.close {
 
 h1 {
   text-align: center;
-  font-size: 4em;
-  font-family: 'Cedarville Cursive', cursive; }
+  font-size: 8em;
+  font-family: 'Rouge Script', cursive;
+  color: #053B34;
+  margin-top: 50px; }
 
-.welcome {
+.info {
   color: #AD6316; }
 
 .view-wrapper {
@@ -6242,101 +6335,10 @@ h1 {
   border-radius: 10px;
   text-align: left; }
 
-.submit {
-  background-color: #053B34;
-  color: #FFF; }
-
-.submit:hover {
-  background-color: #4E8485;
-  color: #FFF; }
-
-.edit-btn {
-  border: 0;
-  box-shadow: none;
-  font-style: italic;
-  background-color: transparent;
-  font-size: 1em;
-  color: #9C9C9C; }
-
-.edit-btn:hover {
-  color: #AD6316;
-  cursor: pointer; }
-
-.del-btn {
-  font-family: helvetica, sans-serif;
-  font-size: 2em;
-  color: #C7C7C7; }
-
-.del-btn-sm {
-  font-family: helvetica, sans-serif;
-  font-size: 1em;
-  color: #C7C7C7; }
-
-.del-btn:hover {
-  color: #F0184A;
-  cursor: pointer; }
-
-.del-btn-sm:hover {
-  color: #F0184A;
-  cursor: pointer; }
-
 .float-right {
   float: right; }
-
-.party-new-form {
-  width: 30%;
-  margin: 70px auto; }
 
 .grey-italic {
   font-style: italic;
   font-size: 1em;
   color: #9C9C9C; }
-
-.party-name {
-  font-weight: 300;
-  font-size: 2.5em;
-  color: #438485; }
-
-.party-header {
-  margin: 45px 0 30px 20%; }
-
-.link:hover {
-  color: #4E8485; }
-
-.party {
-  text-align: center;
-  font-weight: 300;
-  font-size: 2.5em;
-  margin: 30px; }
-
-a:hover {
-  text-decoration: none; }
-
-.form-input {
-  margin: 10px auto; }
-
-.lists {
-  width: 60%;
-  margin: 20px auto; }
-
-.list {
-  min-height: 100px;
-  margin: 20px auto;
-  text-align: left; }
-
-.list-name {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-right: 5px; }
-
-.item {
-  width: 80%;
-  font-size: 1.2em;
-  margin: 20px auto;
-  border-bottom: grey dotted .5px;
-  text-align: left;
-  padding: 0 15px; }
-
-.add-item-form {
-  margin: 20px auto 0 auto;
-  width: 80%; }

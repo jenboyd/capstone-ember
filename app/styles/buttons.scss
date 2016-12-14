@@ -1,0 +1,47 @@
+.submit {
+  background-color: #053B34;
+  color: #FFF;
+}
+
+.submit:hover {
+  background-color: #4E8485;
+  color: #FFF;
+}
+
+.edit-btn {
+  border: 0;
+  box-shadow: none;
+  font-style: italic;
+  background-color: transparent;
+  font-size: 1em;
+  color: #9C9C9C;
+}
+
+.edit-btn:hover {
+  color: #AD6316;
+  cursor: pointer;
+}
+
+.del-btn {
+  font-family: helvetica, sans-serif;
+  font-size: 2em;
+  color: #C7C7C7;
+
+}
+
+.del-btn:hover {
+  color: #F0184A;
+  cursor: pointer;
+}
+
+.del-btn-sm {
+  font-family: helvetica, sans-serif;
+  font-size: 1em;
+  color: #C7C7C7;
+
+}
+
+.del-btn-sm:hover {
+  color: #F0184A;
+  cursor: pointer;
+}
