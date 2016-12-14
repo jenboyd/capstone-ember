@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #46484A;
+
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.index-view {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1.2em;
+}
+
+.auth-form {
+  width: 40%;
+  margin: 50px auto;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #46484A;
+}
+
+.navbar-default {
+  border: 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+
+}
+
+.container-fluid > .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8em;
+  font-family: 'Rouge Script', cursive;
+  color: #053B34;
+  margin-top: 50px;
+}
+
+.info {
+    color: #AD6316;
+}
+
+.view-wrapper {
+  background-color: white;
+  position: relative;
+  top: 20px;
+  min-height: 600px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+
+//General formatting
+.float-right {
+  float: right;
+}
+
+.grey-italic {
+  font-style: italic;
+  font-size: 1em;
+  color: #9C9C9C;
+}

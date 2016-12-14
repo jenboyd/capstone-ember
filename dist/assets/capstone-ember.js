@@ -986,7 +986,7 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
         var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("h1");
-        var el2 = dom.createTextNode("Pin Planner.");
+        var el2 = dom.createTextNode("Hostess");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -2207,7 +2207,7 @@ define("capstone-ember/index/template", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 14,
+            "line": 9,
             "column": 0
           }
         },
@@ -2219,30 +2219,17 @@ define("capstone-ember/index/template", ["exports"], function (exports) {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createElement("div");
         dom.setAttribute(el1, "class", "index-view");
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h3");
-        dom.setAttribute(el2, "class", "welcome");
-        var el3 = dom.createTextNode("Welcome to Pin Planner!");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
+        var el2 = dom.createTextNode("\n  The party planning app for avid list makers.");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
+        var el2 = dom.createTextNode(" Create an account and get\n  started planning ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  A handy list maker that will help you organize all\n  the ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("br");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode(" things you need for your next get together.\n  ");
+        var el2 = dom.createTextNode("your next get together.\n  ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
@@ -2254,7 +2241,7 @@ define("capstone-ember/index/template", ["exports"], function (exports) {
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("and bring your Pinterest inspiration to life.\n\n");
+        var el2 = dom.createTextNode("and bring your Pinterest inspiration to life.\n");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -3267,7 +3254,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("capstone-ember/app")["default"].create({"name":"capstone-ember","version":"0.0.0+1a1368f9"});
+  require("capstone-ember/app")["default"].create({"name":"capstone-ember","version":"0.0.0+98d8b21a"});
 }
 
 /* jshint ignore:end */
