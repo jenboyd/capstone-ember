@@ -16,12 +16,13 @@
                                    deleteItem='deleteItem'}}
     {{/each}}
 
-  <form class="add-item-form" {{action 'createItem' on='submit'}}>
-    {{input placeholder='Add item'
-            class='input-group form-control'
-            value=form.text}}
-  </form>
+    <h3 {{action "toggleForm"}}>+</h3>
 
+    {{#if isOpen}}
+      {{party-view/party-list/create-item list=list
+                                          createItem='createItem'
+                                          toggleForm='toggleForm'}}
+    {{/if}}
 
   </div>
 </div>

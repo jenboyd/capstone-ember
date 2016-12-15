@@ -21,7 +21,6 @@ Router.map(function () {
 
   this.route('create-party');
   this.route('edit-list', { path: '/parties/:party_id/edit-list' });
-
 });
 
 export default Router;

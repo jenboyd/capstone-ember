@@ -39,6 +39,7 @@ export default Ember.Component.extend({
 
    createItem (newItem) {
      this.sendAction('createItem', newItem);
+     console.log("party-view component");
    },
  },
 });
