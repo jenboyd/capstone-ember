@@ -6231,6 +6231,12 @@ button.close {
   margin: 20px auto 0 auto;
   width: 80%; }
 
+.show-form {
+  visibility: visible; }
+
+.hide-form {
+  visibility: hidden; }
+
 .lists {
   width: 60%;
   margin: 20px auto; }

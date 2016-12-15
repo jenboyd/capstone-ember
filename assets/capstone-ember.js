@@ -1276,6 +1276,7 @@ define('capstone-ember/components/party-view/component', ['exports', 'ember'], f
 
       createItem: function createItem(newItem) {
         this.sendAction('createItem', newItem);
+        console.log("party-view component");
       }
     }
   });
@@ -1301,15 +1302,87 @@ define('capstone-ember/components/party-view/party-list/component', ['exports', 
         return this.sendAction('editList', this.get('list'));
       },
 
+      createItem: function createItem(newItem) {
+        this.sendAction('createItem', newItem);
+      },
+
+      toggleForm: function toggleForm() {
+        this.toggleProperty('isOpen');
+      }
+
+    }
+  });
+});
+define('capstone-ember/components/party-view/party-list/create-item/component', ['exports', 'ember'], function (exports, _ember) {
+  exports['default'] = _ember['default'].Component.extend({
+
+    form: {
+      text: null
+
+    },
+
+    actions: {
       createItem: function createItem() {
         var newItem = this.get('form');
         newItem.list = this.get('list');
-
         this.sendAction('createItem', newItem);
         this.set('form.text', null);
+        this.sendAction('toggleForm');
       }
     }
   });
+});
+define("capstone-ember/components/party-view/party-list/create-item/template", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.8.3",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 0
+          }
+        },
+        "moduleName": "capstone-ember/components/party-view/party-list/create-item/template.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("  ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("form");
+        dom.setAttribute(el1, "class", "add-item-form");
+        var el2 = dom.createTextNode("\n    ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n  ");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element0 = dom.childAt(fragment, [1]);
+        var morphs = new Array(2);
+        morphs[0] = dom.createElementMorph(element0);
+        morphs[1] = dom.createMorphAt(element0, 1, 1);
+        return morphs;
+      },
+      statements: [["element", "action", ["createItem"], ["on", "submit"], ["loc", [null, [1, 30], [1, 65]]], 0, 0], ["inline", "input", [], ["placeholder", "Add item", "class", "input-group form-control", "value", ["subexpr", "@mut", [["get", "form.text", ["loc", [null, [4, 18], [4, 27]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [2, 4], [4, 29]]], 0, 0]],
+      locals: [],
+      templates: []
+    };
+  })());
 });
 define('capstone-ember/components/party-view/party-list/item/component', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Component.extend({
@@ -1422,6 +1495,47 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
         templates: []
       };
     })();
+    var child1 = (function () {
+      return {
+        meta: {
+          "revision": "Ember@2.8.3",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 21,
+              "column": 4
+            },
+            "end": {
+              "line": 25,
+              "column": 4
+            }
+          },
+          "moduleName": "capstone-ember/components/party-view/party-list/template.hbs"
+        },
+        isEmpty: false,
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("      ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createComment("");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var morphs = new Array(1);
+          morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
+          return morphs;
+        },
+        statements: [["inline", "party-view/party-list/create-item", [], ["list", ["subexpr", "@mut", [["get", "list", ["loc", [null, [22, 47], [22, 51]]], 0, 0, 0, 0]], [], [], 0, 0], "createItem", "createItem", "toggleForm", "toggleForm"], ["loc", [null, [22, 6], [24, 67]]], 0, 0]],
+        locals: [],
+        templates: []
+      };
+    })();
     return {
       meta: {
         "revision": "Ember@2.8.3",
@@ -1432,7 +1546,7 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
             "column": 0
           },
           "end": {
-            "line": 28,
+            "line": 29,
             "column": 0
           }
         },
@@ -1482,18 +1596,17 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
         dom.appendChild(el2, el3);
         var el3 = dom.createComment("");
         dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("h3");
+        var el4 = dom.createTextNode("+");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n  ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createElement("form");
-        dom.setAttribute(el3, "class", "add-item-form");
-        var el4 = dom.createTextNode("\n    ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createComment("");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n  ");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n\n\n  ");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n");
@@ -1516,12 +1629,12 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
         morphs[2] = dom.createElementMorph(element3);
         morphs[3] = dom.createMorphAt(element4, 1, 1);
         morphs[4] = dom.createElementMorph(element5);
-        morphs[5] = dom.createMorphAt(element5, 1, 1);
+        morphs[5] = dom.createMorphAt(element4, 5, 5);
         return morphs;
       },
-      statements: [["content", "list.name", ["loc", [null, [3, 28], [3, 41]]], 0, 0, 0, 0], ["element", "action", ["edit"], [], ["loc", [null, [4, 27], [4, 44]]], 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [8, 41], [8, 60]]], 0, 0], ["block", "each", [["get", "list.items", ["loc", [null, [14, 12], [14, 22]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [14, 4], [17, 13]]]], ["element", "action", ["createItem"], ["on", "submit"], ["loc", [null, [19, 30], [19, 65]]], 0, 0], ["inline", "input", [], ["placeholder", "Add item", "class", "input-group form-control", "value", ["subexpr", "@mut", [["get", "form.text", ["loc", [null, [22, 18], [22, 27]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [20, 4], [22, 29]]], 0, 0]],
+      statements: [["content", "list.name", ["loc", [null, [3, 28], [3, 41]]], 0, 0, 0, 0], ["element", "action", ["edit"], [], ["loc", [null, [4, 27], [4, 44]]], 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [8, 41], [8, 60]]], 0, 0], ["block", "each", [["get", "list.items", ["loc", [null, [14, 12], [14, 22]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [14, 4], [17, 13]]]], ["element", "action", ["toggleForm"], [], ["loc", [null, [19, 8], [19, 31]]], 0, 0], ["block", "if", [["get", "isOpen", ["loc", [null, [21, 10], [21, 16]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [21, 4], [25, 11]]]]],
       locals: [],
-      templates: [child0]
+      templates: [child0, child1]
     };
   })());
 });
@@ -3254,7 +3367,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("capstone-ember/app")["default"].create({"name":"capstone-ember","version":"0.0.0+98d8b21a"});
+  require("capstone-ember/app")["default"].create({"name":"capstone-ember","version":"0.0.0+555d8235"});
 }
 
 /* jshint ignore:end */
