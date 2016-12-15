@@ -3,25 +3,50 @@
   margin: 70px auto;
 }
 
+@media (max-width: 600px) {
+  .party-new-form {
+     width: 90%;
+     margin: 10px auto;
+  }
+}
+
+.party-new-form h4 {
+  font-weight: 100;
+  margin-bottom: 20px;
+
+}
+
 .party-name {
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 3em;
   color: $sage;
+  text-shadow: 1px 2px .5px rgba(0, 0, 0, .1);
 }
-
 .party-header {
-  margin: 45px 0 30px 20%;
-}
-
-.link:hover {
-    color: $sage;
+  text-align: center;
 }
 
 .party {
   text-align: center;
   font-weight: 300;
   font-size: 2.5em;
-  margin: 30px;
+  margin: 30px auto;
+  background-color: $sage;
+  color: $white;
+  padding: 20px;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 600px) {
+  .party {
+     width: 90%;
+  }
+}
+
+.party:hover {
+    background-color: $darkgreen;
 }
 
 a:hover {

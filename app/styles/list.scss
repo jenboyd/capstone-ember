@@ -1,16 +1,36 @@
 .lists {
-   width: 60%;
+   width: 50%;
    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+  .lists {
+     width: 90%;
+     margin: 10px auto;
+  }
 }
 
 .list {
   min-height: 100px;
   margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
   text-align: left;
+  background-color: $white;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
 }
 
 .list-name {
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 300;
   margin-right: 5px;
+  color: $lightgreen;
+}
+
+.list-header {
+  margin-bottom: 15px;
+  border-bottom: $lightgrey 1.5px solid;
+  padding-bottom: 10px;
 }

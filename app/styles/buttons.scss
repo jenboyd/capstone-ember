@@ -13,8 +13,8 @@
   box-shadow: none;
   font-style: italic;
   background-color: transparent;
-  font-size: 1em;
-  color: $lightgrey;
+  font-size: 1.2em;
+  color: $lightergrey;
 }
 
 .edit-btn:hover {
@@ -23,8 +23,9 @@
 }
 
 .del-btn {
-  font-family: helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-left: 5px;
   color: $lightergrey;
 }
 
@@ -34,13 +35,23 @@
 }
 
 .del-btn-sm {
-  font-family: helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
+  margin-left: 10px;
+  vertical-align: bottom;
+  font-weight: 700;
   color: $lightergrey;
-
 }
 
 .del-btn-sm:hover {
   color: $pink;
   cursor: pointer;
+}
+
+.add-item {
+  color: $lightergrey;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: 700;
 }

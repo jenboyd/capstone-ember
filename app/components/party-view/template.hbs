@@ -1,16 +1,15 @@
 <div class="view-wrapper">
 
-  <div class="btn btn-xs del-btn float-right" {{action 'delete'}}>
-    X
-  </div>
   <div class="party-header">
     <span class="party-name">
       {{party.name}}
     </span>
-    <span class="edit-btn" {{action 'edit'}}>
-      edit
-    </span>
+
     <div>{{party.location}}</div>
+
+    <i class="fa fa-pencil edit-btn" {{action 'edit'}} aria-hidden="true"></i>
+
+    <i class="fa fa-trash-o del-btn" {{action 'delete'}} aria-hidden="true"></i>
   </div>
 
   <div class="lists">

@@ -1,22 +1,19 @@
-<div class="list panel panel-default">
-  <div class="panel-heading">
+<div class="list">
+  <div class="list-header">
     <span class="list-name">{{list.name}}</span>
-    <span class="edit-btn" {{action 'edit'}}>
-      edit
-    </span>
 
-    <span class="del-btn-sm float-right" {{action 'delete'}}>
-      X
-    </span>
+    <i class="fa fa-trash-o del-btn-sm float-right" {{action 'delete'}} aria-hidden="true"></i>
+
+    <i class="fa fa-pencil edit-btn float-right" {{action 'edit'}} aria-hidden="true"></i>
 
   </div>
-  <div class="panel-body">
+  <div class="list-body">
     {{#each list.items as |item|}}
       {{party-view/party-list/item item=item
                                    deleteItem='deleteItem'}}
     {{/each}}
 
-    <h3 {{action "toggleForm"}}>+</h3>
+    <i class="fa fa-plus-circle add-item"{{action "toggleForm"}} aria-hidden="true"></i>
 
     {{#if isOpen}}
       {{party-view/party-list/create-item list=list

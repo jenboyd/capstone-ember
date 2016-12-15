@@ -251,7 +251,7 @@ define("capstone-ember/change-password/template", ["exports"], function (exports
         dom.setAttribute(el1, "class", "auth-form");
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h2");
+        var el2 = dom.createElement("h4");
         var el3 = dom.createTextNode("Change Password");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
@@ -553,12 +553,12 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
             "loc": {
               "source": null,
               "start": {
-                "line": 9,
-                "column": 14
+                "line": 8,
+                "column": 16
               },
               "end": {
-                "line": 9,
-                "column": 46
+                "line": 8,
+                "column": 48
               }
             },
             "moduleName": "capstone-ember/components/my-application/template.hbs"
@@ -588,12 +588,12 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
             "loc": {
               "source": null,
               "start": {
-                "line": 10,
-                "column": 14
+                "line": 9,
+                "column": 16
               },
               "end": {
-                "line": 10,
-                "column": 53
+                "line": 9,
+                "column": 55
               }
             },
             "moduleName": "capstone-ember/components/my-application/template.hbs"
@@ -616,69 +616,19 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           templates: []
         };
       })();
-      return {
-        meta: {
-          "revision": "Ember@2.8.3",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 8,
-              "column": 8
-            },
-            "end": {
-              "line": 11,
-              "column": 8
-            }
-          },
-          "moduleName": "capstone-ember/components/my-application/template.hbs"
-        },
-        isEmpty: false,
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("          ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("li");
-          var el2 = dom.createComment("");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n          ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("li");
-          var el2 = dom.createComment("");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var morphs = new Array(2);
-          morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1]), 0, 0);
-          morphs[1] = dom.createMorphAt(dom.childAt(fragment, [3]), 0, 0);
-          return morphs;
-        },
-        statements: [["block", "link-to", ["parties"], [], 0, null, ["loc", [null, [9, 14], [9, 58]]]], ["block", "link-to", ["create-party"], [], 1, null, ["loc", [null, [10, 14], [10, 65]]]]],
-        locals: [],
-        templates: [child0, child1]
-      };
-    })();
-    var child1 = (function () {
-      var child0 = (function () {
+      var child2 = (function () {
         return {
           meta: {
             "revision": "Ember@2.8.3",
             "loc": {
               "source": null,
               "start": {
-                "line": 16,
-                "column": 12
+                "line": 10,
+                "column": 16
               },
               "end": {
-                "line": 16,
-                "column": 57
+                "line": 10,
+                "column": 56
               }
             },
             "moduleName": "capstone-ember/components/my-application/template.hbs"
@@ -689,7 +639,7 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           hasRendered: false,
           buildFragment: function buildFragment(dom) {
             var el0 = dom.createDocumentFragment();
-            var el1 = dom.createTextNode("CHANGE PASSWORD");
+            var el1 = dom.createTextNode("CHANGE PWD");
             dom.appendChild(el0, el1);
             return el0;
           },
@@ -707,12 +657,12 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           "loc": {
             "source": null,
             "start": {
-              "line": 15,
+              "line": 7,
               "column": 8
             },
             "end": {
-              "line": 18,
-              "column": 8
+              "line": 12,
+              "column": 10
             }
           },
           "moduleName": "capstone-ember/components/my-application/template.hbs"
@@ -723,13 +673,25 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("        ");
+          var el1 = dom.createTextNode("            ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("li");
           var el2 = dom.createComment("");
           dom.appendChild(el1, el2);
           dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n        ");
+          var el1 = dom.createTextNode("\n            ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("li");
+          var el2 = dom.createComment("");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n            ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("li");
+          var el2 = dom.createComment("");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n            ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("li");
           var el2 = dom.createElement("a");
@@ -743,18 +705,20 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           return el0;
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var element0 = dom.childAt(fragment, [3, 0]);
-          var morphs = new Array(2);
+          var element0 = dom.childAt(fragment, [7, 0]);
+          var morphs = new Array(4);
           morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1]), 0, 0);
-          morphs[1] = dom.createElementMorph(element0);
+          morphs[1] = dom.createMorphAt(dom.childAt(fragment, [3]), 0, 0);
+          morphs[2] = dom.createMorphAt(dom.childAt(fragment, [5]), 0, 0);
+          morphs[3] = dom.createElementMorph(element0);
           return morphs;
         },
-        statements: [["block", "link-to", ["change-password"], [], 0, null, ["loc", [null, [16, 12], [16, 69]]]], ["element", "action", ["signOut"], [], ["loc", [null, [17, 24], [17, 44]]], 0, 0]],
+        statements: [["block", "link-to", ["parties"], [], 0, null, ["loc", [null, [8, 16], [8, 60]]]], ["block", "link-to", ["create-party"], [], 1, null, ["loc", [null, [9, 16], [9, 67]]]], ["block", "link-to", ["change-password"], [], 2, null, ["loc", [null, [10, 16], [10, 68]]]], ["element", "action", ["signOut"], [], ["loc", [null, [11, 28], [11, 48]]], 0, 0]],
         locals: [],
-        templates: [child0]
+        templates: [child0, child1, child2]
       };
     })();
-    var child2 = (function () {
+    var child1 = (function () {
       var child0 = (function () {
         return {
           meta: {
@@ -762,12 +726,12 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
             "loc": {
               "source": null,
               "start": {
-                "line": 19,
-                "column": 12
+                "line": 13,
+                "column": 14
               },
               "end": {
-                "line": 19,
-                "column": 41
+                "line": 13,
+                "column": 43
               }
             },
             "moduleName": "capstone-ember/components/my-application/template.hbs"
@@ -797,12 +761,12 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
             "loc": {
               "source": null,
               "start": {
-                "line": 20,
-                "column": 12
+                "line": 14,
+                "column": 16
               },
               "end": {
-                "line": 20,
-                "column": 41
+                "line": 14,
+                "column": 45
               }
             },
             "moduleName": "capstone-ember/components/my-application/template.hbs"
@@ -831,11 +795,11 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           "loc": {
             "source": null,
             "start": {
-              "line": 18,
-              "column": 8
+              "line": 12,
+              "column": 10
             },
             "end": {
-              "line": 22,
+              "line": 15,
               "column": 8
             }
           },
@@ -847,19 +811,19 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("        ");
+          var el1 = dom.createTextNode("          ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("li");
           var el2 = dom.createComment("");
           dom.appendChild(el1, el2);
           dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n        ");
+          var el1 = dom.createTextNode("\n            ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("li");
           var el2 = dom.createComment("");
           dom.appendChild(el1, el2);
           dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n\n");
+          var el1 = dom.createTextNode("\n");
           dom.appendChild(el0, el1);
           return el0;
         },
@@ -869,23 +833,23 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           morphs[1] = dom.createMorphAt(dom.childAt(fragment, [3]), 0, 0);
           return morphs;
         },
-        statements: [["block", "link-to", ["sign-up"], [], 0, null, ["loc", [null, [19, 12], [19, 53]]]], ["block", "link-to", ["sign-in"], [], 1, null, ["loc", [null, [20, 12], [20, 53]]]]],
+        statements: [["block", "link-to", ["sign-up"], [], 0, null, ["loc", [null, [13, 14], [13, 55]]]], ["block", "link-to", ["sign-in"], [], 1, null, ["loc", [null, [14, 16], [14, 57]]]]],
         locals: [],
         templates: [child0, child1]
       };
     })();
-    var child3 = (function () {
+    var child2 = (function () {
       return {
         meta: {
           "revision": "Ember@2.8.3",
           "loc": {
             "source": null,
             "start": {
-              "line": 30,
+              "line": 21,
               "column": 0
             },
             "end": {
-              "line": 32,
+              "line": 23,
               "column": 0
             }
           },
@@ -910,7 +874,7 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "flash-message", [], ["flash", ["subexpr", "@mut", [["get", "flash", ["loc", [null, [31, 24], [31, 29]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [31, 2], [31, 31]]], 0, 0]],
+        statements: [["inline", "flash-message", [], ["flash", ["subexpr", "@mut", [["get", "flash", ["loc", [null, [22, 24], [22, 29]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [22, 2], [22, 31]]], 0, 0]],
         locals: ["flash"],
         templates: []
       };
@@ -925,7 +889,7 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
             "column": 0
           },
           "end": {
-            "line": 37,
+            "line": 28,
             "column": 0
           }
         },
@@ -952,18 +916,7 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
         var el3 = dom.createElement("div");
         dom.setAttribute(el3, "class", "collapse navbar-collapse");
         dom.setAttribute(el3, "id", "navigation");
-        var el4 = dom.createTextNode("\n\n      ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createElement("ul");
-        dom.setAttribute(el4, "class", "nav navbar-nav");
-        var el5 = dom.createTextNode("\n");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createComment("");
-        dom.appendChild(el4, el5);
-        var el5 = dom.createTextNode("      ");
-        dom.appendChild(el4, el5);
-        dom.appendChild(el3, el4);
-        var el4 = dom.createTextNode("\n\n      ");
+        var el4 = dom.createTextNode("\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("ul");
         dom.setAttribute(el4, "class", "nav navbar-nav navbar-right");
@@ -981,12 +934,6 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n");
-        dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h1");
-        var el2 = dom.createTextNode("Hostess");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -1010,18 +957,16 @@ define("capstone-ember/components/my-application/template", ["exports"], functio
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var element1 = dom.childAt(fragment, [0, 1]);
-        var element2 = dom.childAt(element1, [3]);
-        var morphs = new Array(5);
+        var morphs = new Array(4);
         morphs[0] = dom.createMorphAt(element1, 1, 1);
-        morphs[1] = dom.createMorphAt(dom.childAt(element2, [1]), 1, 1);
-        morphs[2] = dom.createMorphAt(dom.childAt(element2, [3]), 1, 1);
-        morphs[3] = dom.createMorphAt(fragment, 4, 4, contextualElement);
-        morphs[4] = dom.createMorphAt(dom.childAt(fragment, [6]), 1, 1);
+        morphs[1] = dom.createMorphAt(dom.childAt(element1, [3, 1]), 1, 1);
+        morphs[2] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        morphs[3] = dom.createMorphAt(dom.childAt(fragment, [4]), 1, 1);
         return morphs;
       },
-      statements: [["content", "navbar-header", ["loc", [null, [3, 4], [3, 21]]], 0, 0, 0, 0], ["block", "if", [["get", "isAuthenticated", ["loc", [null, [8, 14], [8, 29]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [8, 8], [11, 15]]]], ["block", "if", [["get", "isAuthenticated", ["loc", [null, [15, 14], [15, 29]]], 0, 0, 0, 0]], [], 1, 2, ["loc", [null, [15, 8], [22, 15]]]], ["block", "each", [["get", "flashMessages.queue", ["loc", [null, [30, 8], [30, 27]]], 0, 0, 0, 0]], [], 3, null, ["loc", [null, [30, 0], [32, 9]]]], ["content", "outlet", ["loc", [null, [35, 2], [35, 12]]], 0, 0, 0, 0]],
+      statements: [["content", "navbar-header", ["loc", [null, [3, 4], [3, 21]]], 0, 0, 0, 0], ["block", "if", [["get", "isAuthenticated", ["loc", [null, [7, 14], [7, 29]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [7, 8], [15, 15]]]], ["block", "each", [["get", "flashMessages.queue", ["loc", [null, [21, 8], [21, 27]]], 0, 0, 0, 0]], [], 2, null, ["loc", [null, [21, 0], [23, 9]]]], ["content", "outlet", ["loc", [null, [26, 2], [26, 12]]], 0, 0, 0, 0]],
       locals: [],
-      templates: [child0, child1, child2, child3]
+      templates: [child0, child1, child2]
     };
   })());
 });
@@ -1040,12 +985,12 @@ define("capstone-ember/components/navbar-header/template", ["exports"], function
           "loc": {
             "source": null,
             "start": {
-              "line": 2,
-              "column": 0
+              "line": 3,
+              "column": 3
             },
             "end": {
-              "line": 2,
-              "column": 51
+              "line": 3,
+              "column": 53
             }
           },
           "moduleName": "capstone-ember/components/navbar-header/template.hbs"
@@ -1056,7 +1001,7 @@ define("capstone-ember/components/navbar-header/template", ["exports"], function
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("HOME");
+          var el1 = dom.createTextNode("Hostess");
           dom.appendChild(el0, el1);
           return el0;
         },
@@ -1078,7 +1023,7 @@ define("capstone-ember/components/navbar-header/template", ["exports"], function
             "column": 0
           },
           "end": {
-            "line": 3,
+            "line": 4,
             "column": 0
           }
         },
@@ -1092,9 +1037,11 @@ define("capstone-ember/components/navbar-header/template", ["exports"], function
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
+        var el1 = dom.createTextNode("\n\n");
         dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
+        var el1 = dom.createElement("p");
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
@@ -1103,11 +1050,11 @@ define("capstone-ember/components/navbar-header/template", ["exports"], function
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(2);
         morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
-        morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
+        morphs[1] = dom.createMorphAt(dom.childAt(fragment, [2]), 0, 0);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["content", "hamburger-menu", ["loc", [null, [1, 0], [1, 18]]], 0, 0, 0, 0], ["block", "link-to", ["application"], ["class", "navbar-brand"], 0, null, ["loc", [null, [2, 0], [2, 63]]]]],
+      statements: [["content", "hamburger-menu", ["loc", [null, [1, 0], [1, 18]]], 0, 0, 0, 0], ["block", "link-to", ["application"], ["class", "nav-logo"], 0, null, ["loc", [null, [3, 3], [3, 65]]]]],
       locals: [],
       templates: [child0]
     };
@@ -1165,7 +1112,6 @@ define("capstone-ember/components/party-new/template", ["exports"], function (ex
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("h4");
-        dom.setAttribute(el2, "class", "welcome");
         var el3 = dom.createTextNode("Let's get this party started!");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
@@ -1406,7 +1352,7 @@ define("capstone-ember/components/party-view/party-list/item/template", ["export
             "column": 0
           },
           "end": {
-            "line": 7,
+            "line": 5,
             "column": 0
           }
         },
@@ -1426,10 +1372,9 @@ define("capstone-ember/components/party-view/party-list/item/template", ["export
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "del-btn-sm float-right");
-        var el3 = dom.createTextNode("\n    X\n  ");
-        dom.appendChild(el2, el3);
+        var el2 = dom.createElement("i");
+        dom.setAttribute(el2, "class", "fa fa-minus-circle del-btn-sm float-right");
+        dom.setAttribute(el2, "aria-hidden", "true");
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n");
         dom.appendChild(el1, el2);
@@ -1446,7 +1391,7 @@ define("capstone-ember/components/party-view/party-list/item/template", ["export
         morphs[1] = dom.createElementMorph(element1);
         return morphs;
       },
-      statements: [["content", "item.text", ["loc", [null, [2, 2], [2, 15]]], 0, 0, 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [3, 38], [3, 57]]], 0, 0]],
+      statements: [["content", "item.text", ["loc", [null, [2, 2], [2, 15]]], 0, 0, 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [3, 55], [3, 74]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -1461,11 +1406,11 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
           "loc": {
             "source": null,
             "start": {
-              "line": 14,
+              "line": 11,
               "column": 4
             },
             "end": {
-              "line": 17,
+              "line": 14,
               "column": 4
             }
           },
@@ -1490,7 +1435,7 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "party-view/party-list/item", [], ["item", ["subexpr", "@mut", [["get", "item", ["loc", [null, [15, 40], [15, 44]]], 0, 0, 0, 0]], [], [], 0, 0], "deleteItem", "deleteItem"], ["loc", [null, [15, 6], [16, 60]]], 0, 0]],
+        statements: [["inline", "party-view/party-list/item", [], ["item", ["subexpr", "@mut", [["get", "item", ["loc", [null, [12, 40], [12, 44]]], 0, 0, 0, 0]], [], [], 0, 0], "deleteItem", "deleteItem"], ["loc", [null, [12, 6], [13, 60]]], 0, 0]],
         locals: ["item"],
         templates: []
       };
@@ -1502,11 +1447,11 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
           "loc": {
             "source": null,
             "start": {
-              "line": 21,
+              "line": 18,
               "column": 4
             },
             "end": {
-              "line": 25,
+              "line": 22,
               "column": 4
             }
           },
@@ -1531,7 +1476,7 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "party-view/party-list/create-item", [], ["list", ["subexpr", "@mut", [["get", "list", ["loc", [null, [22, 47], [22, 51]]], 0, 0, 0, 0]], [], [], 0, 0], "createItem", "createItem", "toggleForm", "toggleForm"], ["loc", [null, [22, 6], [24, 67]]], 0, 0]],
+        statements: [["inline", "party-view/party-list/create-item", [], ["list", ["subexpr", "@mut", [["get", "list", ["loc", [null, [19, 47], [19, 51]]], 0, 0, 0, 0]], [], [], 0, 0], "createItem", "createItem", "toggleForm", "toggleForm"], ["loc", [null, [19, 6], [21, 67]]], 0, 0]],
         locals: [],
         templates: []
       };
@@ -1546,7 +1491,7 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
             "column": 0
           },
           "end": {
-            "line": 29,
+            "line": 26,
             "column": 0
           }
         },
@@ -1559,11 +1504,11 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "list panel panel-default");
+        dom.setAttribute(el1, "class", "list");
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "panel-heading");
+        dom.setAttribute(el2, "class", "list-header");
         var el3 = dom.createTextNode("\n    ");
         dom.appendChild(el2, el3);
         var el3 = dom.createElement("span");
@@ -1571,19 +1516,17 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
         var el4 = dom.createComment("");
         dom.appendChild(el3, el4);
         dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n    ");
+        var el3 = dom.createTextNode("\n\n    ");
         dom.appendChild(el2, el3);
-        var el3 = dom.createElement("span");
-        dom.setAttribute(el3, "class", "edit-btn");
-        var el4 = dom.createTextNode("\n      edit\n    ");
-        dom.appendChild(el3, el4);
+        var el3 = dom.createElement("i");
+        dom.setAttribute(el3, "class", "fa fa-trash-o del-btn-sm float-right");
+        dom.setAttribute(el3, "aria-hidden", "true");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n\n    ");
         dom.appendChild(el2, el3);
-        var el3 = dom.createElement("span");
-        dom.setAttribute(el3, "class", "del-btn-sm float-right");
-        var el4 = dom.createTextNode("\n      X\n    ");
-        dom.appendChild(el3, el4);
+        var el3 = dom.createElement("i");
+        dom.setAttribute(el3, "class", "fa fa-pencil edit-btn float-right");
+        dom.setAttribute(el3, "aria-hidden", "true");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n\n  ");
         dom.appendChild(el2, el3);
@@ -1591,16 +1534,16 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "panel-body");
+        dom.setAttribute(el2, "class", "list-body");
         var el3 = dom.createTextNode("\n");
         dom.appendChild(el2, el3);
         var el3 = dom.createComment("");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n    ");
         dom.appendChild(el2, el3);
-        var el3 = dom.createElement("h3");
-        var el4 = dom.createTextNode("+");
-        dom.appendChild(el3, el4);
+        var el3 = dom.createElement("i");
+        dom.setAttribute(el3, "class", "fa fa-plus-circle add-item");
+        dom.setAttribute(el3, "aria-hidden", "true");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n\n");
         dom.appendChild(el2, el3);
@@ -1632,7 +1575,7 @@ define("capstone-ember/components/party-view/party-list/template", ["exports"], 
         morphs[5] = dom.createMorphAt(element4, 5, 5);
         return morphs;
       },
-      statements: [["content", "list.name", ["loc", [null, [3, 28], [3, 41]]], 0, 0, 0, 0], ["element", "action", ["edit"], [], ["loc", [null, [4, 27], [4, 44]]], 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [8, 41], [8, 60]]], 0, 0], ["block", "each", [["get", "list.items", ["loc", [null, [14, 12], [14, 22]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [14, 4], [17, 13]]]], ["element", "action", ["toggleForm"], [], ["loc", [null, [19, 8], [19, 31]]], 0, 0], ["block", "if", [["get", "isOpen", ["loc", [null, [21, 10], [21, 16]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [21, 4], [25, 11]]]]],
+      statements: [["content", "list.name", ["loc", [null, [3, 28], [3, 41]]], 0, 0, 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [5, 52], [5, 71]]], 0, 0], ["element", "action", ["edit"], [], ["loc", [null, [7, 49], [7, 66]]], 0, 0], ["block", "each", [["get", "list.items", ["loc", [null, [11, 12], [11, 22]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [11, 4], [14, 13]]]], ["element", "action", ["toggleForm"], [], ["loc", [null, [16, 41], [16, 64]]], 0, 0], ["block", "if", [["get", "isOpen", ["loc", [null, [18, 10], [18, 16]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [18, 4], [22, 11]]]]],
       locals: [],
       templates: [child0, child1]
     };
@@ -1698,11 +1641,11 @@ define("capstone-ember/components/party-view/template", ["exports"], function (e
           "loc": {
             "source": null,
             "start": {
-              "line": 17,
+              "line": 16,
               "column": 4
             },
             "end": {
-              "line": 23,
+              "line": 22,
               "column": 4
             }
           },
@@ -1727,7 +1670,7 @@ define("capstone-ember/components/party-view/template", ["exports"], function (e
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "party-view/party-list", [], ["list", ["subexpr", "@mut", [["get", "list", ["loc", [null, [18, 35], [18, 39]]], 0, 0, 0, 0]], [], [], 0, 0], "deleteList", "deleteList", "editList", "editList", "deleteItem", "deleteItem", "createItem", "createItem"], ["loc", [null, [18, 6], [22, 55]]], 0, 0]],
+        statements: [["inline", "party-view/party-list", [], ["list", ["subexpr", "@mut", [["get", "list", ["loc", [null, [17, 35], [17, 39]]], 0, 0, 0, 0]], [], [], 0, 0], "deleteList", "deleteList", "editList", "editList", "deleteItem", "deleteItem", "createItem", "createItem"], ["loc", [null, [17, 6], [21, 55]]], 0, 0]],
         locals: ["list"],
         templates: []
       };
@@ -1742,7 +1685,7 @@ define("capstone-ember/components/party-view/template", ["exports"], function (e
             "column": 0
           },
           "end": {
-            "line": 33,
+            "line": 32,
             "column": 0
           }
         },
@@ -1759,13 +1702,6 @@ define("capstone-ember/components/party-view/template", ["exports"], function (e
         var el2 = dom.createTextNode("\n\n  ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "btn btn-xs del-btn float-right");
-        var el3 = dom.createTextNode("\n    X\n  ");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n  ");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("div");
         dom.setAttribute(el2, "class", "party-header");
         var el3 = dom.createTextNode("\n    ");
         dom.appendChild(el2, el3);
@@ -1778,18 +1714,23 @@ define("capstone-ember/components/party-view/template", ["exports"], function (e
         var el4 = dom.createTextNode("\n    ");
         dom.appendChild(el3, el4);
         dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createElement("span");
-        dom.setAttribute(el3, "class", "edit-btn");
-        var el4 = dom.createTextNode("\n      edit\n    ");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
-        var el3 = dom.createTextNode("\n    ");
+        var el3 = dom.createTextNode("\n\n    ");
         dom.appendChild(el2, el3);
         var el3 = dom.createElement("div");
         var el4 = dom.createComment("");
         dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("i");
+        dom.setAttribute(el3, "class", "fa fa-pencil edit-btn");
+        dom.setAttribute(el3, "aria-hidden", "true");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("i");
+        dom.setAttribute(el3, "class", "fa fa-trash-o del-btn");
+        dom.setAttribute(el3, "aria-hidden", "true");
         dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n  ");
         dom.appendChild(el2, el3);
@@ -1825,21 +1766,21 @@ define("capstone-ember/components/party-view/template", ["exports"], function (e
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var element0 = dom.childAt(fragment, [0]);
         var element1 = dom.childAt(element0, [1]);
-        var element2 = dom.childAt(element0, [3]);
-        var element3 = dom.childAt(element2, [3]);
-        var element4 = dom.childAt(element0, [5]);
+        var element2 = dom.childAt(element1, [5]);
+        var element3 = dom.childAt(element1, [7]);
+        var element4 = dom.childAt(element0, [3]);
         var element5 = dom.childAt(element4, [3]);
         var morphs = new Array(7);
-        morphs[0] = dom.createElementMorph(element1);
-        morphs[1] = dom.createMorphAt(dom.childAt(element2, [1]), 1, 1);
-        morphs[2] = dom.createElementMorph(element3);
-        morphs[3] = dom.createMorphAt(dom.childAt(element2, [5]), 0, 0);
+        morphs[0] = dom.createMorphAt(dom.childAt(element1, [1]), 1, 1);
+        morphs[1] = dom.createMorphAt(dom.childAt(element1, [3]), 0, 0);
+        morphs[2] = dom.createElementMorph(element2);
+        morphs[3] = dom.createElementMorph(element3);
         morphs[4] = dom.createMorphAt(element4, 1, 1);
         morphs[5] = dom.createElementMorph(element5);
         morphs[6] = dom.createMorphAt(element5, 1, 1);
         return morphs;
       },
-      statements: [["element", "action", ["delete"], [], ["loc", [null, [3, 46], [3, 65]]], 0, 0], ["content", "party.name", ["loc", [null, [8, 6], [8, 20]]], 0, 0, 0, 0], ["element", "action", ["edit"], [], ["loc", [null, [10, 27], [10, 44]]], 0, 0], ["content", "party.location", ["loc", [null, [13, 9], [13, 27]]], 0, 0, 0, 0], ["block", "each", [["get", "party.lists", ["loc", [null, [17, 12], [17, 23]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [17, 4], [23, 13]]]], ["element", "action", ["createList"], ["on", "submit"], ["loc", [null, [25, 10], [25, 45]]], 0, 0], ["inline", "input", [], ["placeholder", "Add list", "class", "input-group form-control", "value", ["subexpr", "@mut", [["get", "form.name", ["loc", [null, [28, 20], [28, 29]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [26, 6], [28, 31]]], 0, 0]],
+      statements: [["content", "party.name", ["loc", [null, [5, 6], [5, 20]]], 0, 0, 0, 0], ["content", "party.location", ["loc", [null, [8, 9], [8, 27]]], 0, 0, 0, 0], ["element", "action", ["edit"], [], ["loc", [null, [10, 37], [10, 54]]], 0, 0], ["element", "action", ["delete"], [], ["loc", [null, [12, 37], [12, 56]]], 0, 0], ["block", "each", [["get", "party.lists", ["loc", [null, [16, 12], [16, 23]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [16, 4], [22, 13]]]], ["element", "action", ["createList"], ["on", "submit"], ["loc", [null, [24, 10], [24, 45]]], 0, 0], ["inline", "input", [], ["placeholder", "Add list", "class", "input-group form-control", "value", ["subexpr", "@mut", [["get", "form.name", ["loc", [null, [27, 20], [27, 29]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [25, 6], [27, 31]]], 0, 0]],
       locals: [],
       templates: [child0]
     };
@@ -2320,7 +2261,7 @@ define("capstone-ember/index/template", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 9,
+            "line": 12,
             "column": 0
           }
         },
@@ -2334,7 +2275,13 @@ define("capstone-ember/index/template", ["exports"], function (exports) {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createElement("div");
         dom.setAttribute(el1, "class", "index-view");
-        var el2 = dom.createTextNode("\n  The party planning app for avid list makers.");
+        var el2 = dom.createTextNode("\n\n  ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("h1");
+        var el3 = dom.createTextNode("Hostess");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n  The party planning app for avid list makers.");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
@@ -3123,7 +3070,7 @@ define("capstone-ember/sign-in/template", ["exports"], function (exports) {
         dom.setAttribute(el1, "class", "auth-form");
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h2");
+        var el2 = dom.createElement("h4");
         var el3 = dom.createTextNode("Sign In");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
@@ -3199,7 +3146,7 @@ define("capstone-ember/sign-up/template", ["exports"], function (exports) {
         dom.setAttribute(el1, "class", "auth-form");
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h2");
+        var el2 = dom.createElement("h4");
         var el3 = dom.createTextNode("Sign Up");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
